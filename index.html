@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mecha Scorpion — 3-Segment Arachnid Gait</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background Grid -->
+  <div class="grid-bg"></div>
+
+  <!-- Fullscreen Interactive Canvas -->
+  <canvas id="creature-canvas"></canvas>
+
+  <!-- Cyberpunk HUD Overlay -->
+  <div class="hud-container">
+    <div class="hud-header">
+      <div class="hud-badge">
+        <span class="hud-dot"></span>
+        <span class="hud-title">MECHA SCORPION // 3-SEGMENT ARACHNID GAIT</span>
+      </div>
+      <div class="hud-fps" id="canvas-fps">60 FPS</div>
+    </div>
+
+    <div class="hud-footer">
+      <div class="hud-hint">
+        <span class="hint-key">HƯỚNG DẪN:</span> Di chuyển chuột để bọ cạp bò theo (chân 3 khúc bước so le) · Nhấp chuột để kẹp càng & chích đuôi
+      </div>
+      <div class="hud-coords" id="hud-coords">
+        TARGET: 0, 0
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
